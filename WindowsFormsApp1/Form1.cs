@@ -49,7 +49,7 @@ namespace WindowsFormsApp1
                         CarList.Add(new Car(Convert.ToInt32(reader["Id"]), Convert.ToString(reader["Make"]), Convert.ToString(reader["Model"]), year, Convert.ToString(reader["BodyStyle"]), Convert.ToString(reader["Image"])));
                     }
                 }
-                catch (Exception ex)
+                catch 
                 {
                     MessageBox.Show("База данных не найдена или повреждена и будет создана заново", "Внимание!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     //Удаляем существующую таблицу
